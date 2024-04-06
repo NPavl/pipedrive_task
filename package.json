@@ -1,0 +1,15 @@
+{
+  "name": "pipedrive_task",
+  "version": "1.0.0",
+  "description": "get_deal",
+  "main": "add_deal_baseSample.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikolai Pavlov",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "pipedrive": "^22.6.0"
+  }
+}
