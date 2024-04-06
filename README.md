@@ -1,6 +1,11 @@
 # Pipedrive API: Add Deal Base Sample
 
-## Description
+## Description 
+
+### Steps 
+
+
+## Description script add_deal_baseSample.mjs:
 
 This script (`add_deal_baseSample.mjs`) demonstrates how to add a new deal to Pipedrive using their API.
 

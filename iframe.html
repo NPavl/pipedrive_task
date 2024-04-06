@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Deal Form</title>
+  <!-- Add Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- Add custom styles -->
+  <style>
+    body {
+      background-color: #212529;
+      color: #ffffff;
+    }
+    .form-col {
+      padding: 0 15px;
+    }
+    .form-card {
+      background-color: #343a40;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .form-card .form-control {
+      background-color: #495057;
+      border: none;
+      color: #ffffff;
+    }
+    .form-card label {
+      color: #adb5bd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="form-card">
+          <h2 class="my-4 text-center">Add Deal</h2>
+          <form id="addDealForm">
+            <div class="row">
+              <!-- First column -->
+              <div class="col-md-6 form-col">
+                <div class="mb-3">
+                  <label for="title" class="form-label">Title:</label>
+                  <input type="text" class="form-control" id="title" name="title" required>
+                </div>
+                <div class="mb-3">
+                  <label for="value" class="form-label">Value:</label>
+                  <input type="number" class="form-control" id="value" name="value" min="0" required>
+                </div>
+                <div class="mb-3">
+                  <label for="currency" class="form-label">Currency:</label>
+                  <select class="form-select" id="currency" name="currency" required>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="userID" class="form-label">User ID:</label>
+                  <input type="text" class="form-control" id="userID" name="userID">
+                </div>
+                <div class="mb-3">
+                  <label for="personID" class="form-label">Person ID:</label>
+                  <input type="text" class="form-control" id="personID" name="personID">
+                </div>
+                <div class="mb-3">
+                  <label for="orgID" class="form-label">Organization ID:</label>
+                  <input type="text" class="form-control" id="orgID" name="orgID">
+                </div>
+                <div class="mb-3">
+                  <label for="stageID" class="form-label">Stage ID:</label>
+                  <input type="text" class="form-control" id="stageID" name="stageID">
+                </div>
+              </div>
+              <!-- Second column -->
+              <div class="col-md-6 form-col border-start">
+                <div class="mb-3">
+                  <label for="status" class="form-label">Status:</label>
+                  <input type="text" class="form-control" id="status" name="status">
+                </div>
+                <div class="mb-3">
+                  <label for="expectedCloseDate" class="form-label">Expected Close Date:</label>
+                  <input type="date" class="form-control" id="expectedCloseDate" name="expectedCloseDate">
+                </div>
+                <div class="mb-3">
+                  <label for="probability" class="form-label">Probability:</label>
+                  <input type="number" class="form-control" id="probability" name="probability" min="0" max="100">
+                </div>
+                <div class="mb-3">
+                  <label for="lostReason" class="form-label">Lost Reason:</label>
+                  <input type="text" class="form-control" id="lostReason" name="lostReason">
+                </div>
+                <div class="mb-3">
+                  <label for="visibleTo" class="form-label">Visible To:</label>
+                  <input type="text" class="form-control" id="visibleTo" name="visibleTo">
+                </div>
+                <div class="mb-3">
+                  <label for="addTime" class="form-label">Add Time:</label>
+                  <input type="date" class="form-control" id="addTime" name="addTime" required>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <button type="submit" class="btn btn-primary" id="submitButton" disabled>Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="iframe.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('addDealForm');
+      const titleInput = document.getElementById('title');
+      const valueInput = document.getElementById('value');
+      const currencyInput = document.getElementById('currency');
+      const addTimeInput = document.getElementById('addTime');
+      const submitButton = document.getElementById('submitButton');
+
+      const checkFormValidity = () => {
+        if (
+          titleInput.value.trim() !== '' &&
+          valueInput.value.trim() !== '' &&
+          currencyInput.value.trim() !== '' &&
+          addTimeInput.value.trim() !== ''
+        ) {
+          submitButton.disabled = false;
+        } else {
+          submitButton.disabled = true;
+        }
+      };
+
+      form.addEventListener('input', () => {
+        checkFormValidity();
+      });
+    });
+  </script>
+</body>
+</html>
