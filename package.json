@@ -2,14 +2,28 @@
   "name": "pipedrive_task",
   "version": "1.0.0",
   "description": "get_deal",
-  "main": "add_deal_baseSample.mjs",
+  "main": "index.html",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests"
   },
   "author": "Nikolai Pavlov",
   "license": "UNLICENSED",
   "dependencies": {
     "node-fetch": "^3.3.2",
     "pipedrive": "^22.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NPavl/pipedrive_task.git"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.14",
+    "@types/jsdom": "^21.1.6",
+    "@types/sinon": "^17.0.3",
+    "chai": "^5.1.0",
+    "jsdom": "^24.0.0",
+    "mocha": "^10.4.0",
+    "sinon": "^17.0.1"
   }
 }

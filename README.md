@@ -1,9 +1,20 @@
 # Pipedrive API: Add Deal Base Sample
 
-## Description 
+[Test pipedrive link for 'Add a deal' *the request requires a personal api key*](https://npavl.github.io/pipedrive_task/index.html)
 
-### Steps 
+## Required Dependencies
 
+```
+npm install pipedrive 
+npm install mocha chai sinon --save-dev
+npm install jsdom --save-dev
+```
+
+## All Description 
+
+### Steps: 
+
+- to be continue .....
 
 ## Description script add_deal_baseSample.mjs:
 
@@ -72,6 +83,12 @@ console.log('Deal was added successfully!', response);
 
 ```
 addDeal();
+```
+
+## Run tests From Git Bash terminal 
+
+```
+npm test
 ```
 
 ## LINKS: 

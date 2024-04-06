@@ -3,7 +3,7 @@ const defaultClient = new ApiClient();
 
 defaultClient.authentications.api_key.apiKey = process.env.PIPEDRIVE_API_KEY;
 
-async function getSelectedDeals() {
+export async function getSelectedDeals() {
     try {
         console.log('Sending request...');
 

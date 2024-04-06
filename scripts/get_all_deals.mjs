@@ -3,7 +3,7 @@ const defaultClient = new ApiClient();
 
 defaultClient.authentications.api_key.apiKey = process.env.API_TOKEN;
 
-async function getDeals() {
+export async function getDeals() {
     try {
         console.log('Sending request...');
 

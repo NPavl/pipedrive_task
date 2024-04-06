@@ -1,11 +1,10 @@
-require('dotenv').config();
 import { ApiClient, DealsApi } from 'pipedrive';
 
 const defaultClient = new ApiClient();
 defaultClient.authentications.api_key.apiKey = process.env.API_TOKEN;
 
 // Function to handle form submission
-async function handleSubmit(event) {
+export async function handleSubmit(event) {
   event.preventDefault();
 
   // Get form values
