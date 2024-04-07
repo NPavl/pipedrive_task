@@ -105,4 +105,4 @@ npm test
 - [How to get deals from Pipedrive's API (Node.js)](https://developers.pipedrive.com/tutorials/get-deals-pipedrive-api?step=5)
 - [How to create a deal via Pipedrive's API (Node.js)](https://developers.pipedrive.com/docs/api/v1/Deals#addDeal)
 - [Create-a-deal-pipedrive](https://developers.pipedrive.com/tutorials/create-a-deal-pipedrive-api?step=7)
-  [pipedrive - client-nodejs sample ](https://github.com/pipedrive/client-nodejs)
+- [pipedrive - client-nodejs sample](https://github.com/pipedrive/client-nodejs)
