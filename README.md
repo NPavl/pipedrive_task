@@ -106,3 +106,4 @@ npm test
 - [How to create a deal via Pipedrive's API (Node.js)](https://developers.pipedrive.com/docs/api/v1/Deals#addDeal)
 - [Create-a-deal-pipedrive](https://developers.pipedrive.com/tutorials/create-a-deal-pipedrive-api?step=7)
 - [pipedrive - client-nodejs sample](https://github.com/pipedrive/client-nodejs)
+- [newDeal old sample with webform - Job Form from ikromjon1998](https://github.com/Ikromjon1998/newDeal/tree/main)
