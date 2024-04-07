@@ -51,6 +51,7 @@
                 <div class="mb-3">
                   <label for="currency" class="form-label">Currency:</label>
                   <select class="form-select" id="currency" name="currency" required>
+                    <option value="BYN">BYN</option>
                     <option value="USD">USD</option>
                     <option value="EUR">EUR</option>
                     <option value="GBP">GBP</option>
@@ -109,7 +110,9 @@
       </div>
     </div>
   </div>
-  <script src="iframe.js"></script>
+  <script type="module" src="iframe.mjs"></script>
+  <!-- <script src="iframe.mjs"></script> -->
+
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const form = document.getElementById('addDealForm');

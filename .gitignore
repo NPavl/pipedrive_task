@@ -1,2 +1,5 @@
 node_modules/
 .env
+sample_from_github/
+iframe_test.mjs
+pipedrive.d.ts

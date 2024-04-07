@@ -1,4 +1,5 @@
-import { ApiClient, DealsApi } from 'pipedrive';
+import { ApiClient, DealsApi, } from 'pipedrive';
+// import { ApiClient, DealsApi, } from 'https://unpkg.com/browse/pipedrive@22.6.0/dist/index.js'; 
 
 const defaultClient = new ApiClient();
 defaultClient.authentications.api_key.apiKey = process.env.API_TOKEN;
@@ -38,6 +39,8 @@ export async function handleSubmit(event) {
     visible_to: visibleTo,
     add_time: addTime
   };
+
+  console.log(dealData);
 
   // Send data through Pipedrive API
   try {

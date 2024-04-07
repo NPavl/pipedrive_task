@@ -4,17 +4,21 @@
 
 ## Required Dependencies
 
-```
+```npm i 
+or 
 npm install pipedrive 
 npm install mocha chai sinon --save-dev
 npm install jsdom --save-dev
+npm install http-server --save-dev  
 ```
 
-## All Description 
-
-### Steps: 
+## All Description from web form iframe.html (create a deal): 
 
 - to be continue .....
+
+**problem** Google Chrome Dev tools error when passing parameters to a web form
+- iframe.mjs / Not allowed to load local resource: file:///.../node_modules/pipedrive/dist/index
+Try to fix ...
 
 ## Description script add_deal_baseSample.mjs:
 
@@ -86,6 +90,7 @@ addDeal();
 ```
 
 ## Run tests From Git Bash terminal 
+**tests don't work correctly!**
 
 ```
 npm test
@@ -100,4 +105,4 @@ npm test
 - [How to get deals from Pipedrive's API (Node.js)](https://developers.pipedrive.com/tutorials/get-deals-pipedrive-api?step=5)
 - [How to create a deal via Pipedrive's API (Node.js)](https://developers.pipedrive.com/docs/api/v1/Deals#addDeal)
 - [Create-a-deal-pipedrive](https://developers.pipedrive.com/tutorials/create-a-deal-pipedrive-api?step=7)
-
+  [pipedrive - client-nodejs sample ](https://github.com/pipedrive/client-nodejs)
