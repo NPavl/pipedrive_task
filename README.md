@@ -4,7 +4,8 @@
 
 ## Required Dependencies
 
-```npm i 
+```
+npm i 
 or 
 npm install pipedrive 
 npm install mocha chai sinon --save-dev
