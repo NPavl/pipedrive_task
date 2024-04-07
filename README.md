@@ -29,7 +29,6 @@ This script (`add_deal_baseSample.mjs`) demonstrates how to add a new deal to Pi
 
 - Import necessary modules:
    ```
-   javascript
    import { ApiClient, DealsApi } from 'pipedrive';
    ```
 
